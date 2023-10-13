@@ -1,23 +1,108 @@
-nav {
+/* nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: aqua;
+  padding: 0 5px;
 }
 
-.burger span {
-  display: flex;
+nav ul {
+  position: fixed;
+  left: -100%;
+  top: 3%;
   flex-direction: column;
   background-color: var(--nav-span-color);
-  margin: 2px;
-  height: 5px;
+  width: 100%;
+  text-align: center;
+  transition: 0.25s;
+}
+nav li {
+  padding: 3px 0;
 }
 
-.burger span:nth-child(1) {
-  transform: translateY(8px) rotate('45deg');
+nav li:hover {
+  background-color: rgb(186, 216, 216);
 }
-.burger span:nth-child(2) {
-  opacity: 0;
+
+.burger {
+  display: block;
 }
-.burger span:nth-child(1) {
-  transform: translateY(8px) rotate('-45deg');
+.burger::before {
+  content: '\2630';
+  /* margin: 0 5px; */ /*
+}
+.active .burger::before {
+  content: '\2715';
+  /* margin: 0 5px; */ /*
+}/*
+nav.active ul {
+  left: 0;
+}
+
+@media (min-width: 800px) {
+  .burger {
+    display: none;
+    cursor: pointer;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 10px;
+    font-size: calc(0.5rem + 1vw);
+  }
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+  }
+} */
+nav {
+  background: skyblue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  font-size: calc(0.5rem + 1.5vw);
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+}
+.burger {
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 650px) {
+  .burger {
+    display: block;
+  }
+  .burger:before {
+    content: '\2630';
+  }
+  .active #icons:before {
+    content: '\2715';
+  }
+  nav ul {
+    position: fixed;
+    left: -100%;
+    top: 5%;
+    flex-direction: column;
+    background: skyblue;
+    width: 100%;
+    text-align: center;
+    transition: 0.25s;
+  }
+  nav li {
+    padding: 3px 0;
+  }
+  nav li:hover {
+    background: rgb(157, 217, 240);
+  }
+  nav.active ul {
+    left: 0;
+  }
 }
