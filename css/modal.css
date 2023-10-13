@@ -23,7 +23,7 @@
 .modal-content video {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 100vh; /* Pour les petits écrans, la vidéo remplira toute la hauteur */
   object-fit: cover;
   top: 0;
   left: 0;
@@ -45,8 +45,6 @@
 }
 
 .close-modal {
-  width: 10vh;
-  padding: 10px;
   cursor: pointer;
   align-items: center;
   margin: auto;

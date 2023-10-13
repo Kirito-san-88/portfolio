@@ -9,6 +9,7 @@ export default function initializeModal() {
   });
 
   closeModal.addEventListener('click', () => {
+    // headerModal.style.display = 'none';
     headerModal.style.top = '-100%';
     document.body.classList.remove('no-scroll');
     backgroundVideo.pause();
