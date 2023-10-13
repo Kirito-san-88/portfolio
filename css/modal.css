@@ -21,26 +21,26 @@
 }
 
 .modal-content video {
-  position: fixed;
+  position: relative;
   width: 100%;
-  height: 100%; /* Pour les petits écrans, la vidéo remplira toute la hauteur */
+  height: 100vh;
   object-fit: cover;
   top: 0;
   left: 0;
 }
 
 .modal-text {
-  position: fixed;
+  position: absolute;
+  width: 25vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  margin: auto;
+  margin: 0 auto;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
   color: white;
-  font-size: 1.5rem;
+  font-size: 1rem;
   letter-spacing: 5px;
 }
 
@@ -65,20 +65,20 @@
 
 .chevron-svg {
   position: relative;
-  bottom: -50px;
+  /* bottom: -50px; */
+  width: 20%;
 }
 
 .img-profil {
   border-radius: 50%;
   width: 25vh;
   margin: 25px auto;
-  opacity: 0.7;
+  opacity: 0.9;
 }
 
 .no-scroll {
   overflow: hidden;
 }
-
 .intro-modal {
   margin: 1em auto;
 }
@@ -87,11 +87,13 @@
 @media (min-width: 800px) and (orientation: landscape) {
   .modal-content video {
     width: 100%;
-    height: 100%; /* Pour les écrans plus grands, la vidéo remplira toute la hauteur */
-    /* object-fit: cover; */
+    height: 100vh; /* Pour les écrans plus grands, la vidéo remplira toute la hauteur */
+    object-fit: cover;
   }
 
   .modal-text {
-    font-size: 2.5rem;
+    /* width: 25vh; */
+    margin: 0 auto;
+    font-size: 1.5rem;
   }
 }
