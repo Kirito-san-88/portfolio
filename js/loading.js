@@ -6,8 +6,8 @@ export default function loading() {
 
     setTimeout(() => {
       loader.style.display = 'none';
-      // document.body.style.display = 'block';
-      // headerModal.style.display = 'block';
-    }, 900000);
+      document.body.style.display = 'block';
+      headerModal.style.display = 'block';
+    }, 3000);
   });
 }
