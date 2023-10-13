@@ -8,6 +8,6 @@ export default function loading() {
       document.body.style.display = 'block';
       headerModal.style.display = 'block';
       loader.style.display = 'none';
-    }, 1000);
+    }, 300);
   });
 }
