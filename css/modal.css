@@ -1,5 +1,5 @@
 .header-modal {
-  display: flex;
+  /* display: flex; */
   position: fixed;
   top: 0;
   left: 0;
@@ -17,7 +17,7 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  z-index: -1;
+  /* z-index: 1; */
 }
 
 .modal-content video {
@@ -45,6 +45,8 @@
 }
 
 .close-modal {
+  width: 10vh;
+  padding: 10px;
   cursor: pointer;
   align-items: center;
   margin: auto;
@@ -90,7 +92,7 @@
   }
 
   .modal-text {
-    /* width: 25vh; */
+    width: 25vh;
     margin: 0 auto;
     font-size: 1.5rem;
   }
