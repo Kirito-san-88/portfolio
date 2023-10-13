@@ -3,6 +3,8 @@ export default function initializeModal() {
   const closeModal = document.getElementById('closeModal');
   const backgroundVideo = document.getElementById('background-video');
 
+  const loadingContainer = document.getElementById('loading-container');
+
   headerModal.style.display = 'none';
 
   document.addEventListener('load', () => {
@@ -11,6 +13,7 @@ export default function initializeModal() {
   });
 
   closeModal.addEventListener('click', () => {
+    loadingContainer.style.display = 'none';
     headerModal.style.top = '-100%';
     document.body.classList.remove('no-scroll');
     backgroundVideo.pause();

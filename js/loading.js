@@ -5,9 +5,9 @@ export default function loading() {
     loader.style.display = 'block';
 
     setTimeout(() => {
-      loader.style.display = 'none';
       document.body.style.display = 'block';
       headerModal.style.display = 'block';
+      loader.style.display = 'none';
     }, 1000);
   });
 }
