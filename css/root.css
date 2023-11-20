@@ -1,6 +1,7 @@
 :root {
   --nav-span-color: #172554;
   --color-white: #fff;
+  --font-size:font-size: calc(0.5rem + 0.8vw);
 }
 
 * {

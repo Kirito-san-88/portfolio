@@ -4,7 +4,35 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/main.css" />
+    <link rel="icon" href="./img/logo-test.ico" />
     <title>Portfolio Bassiere Vincent</title>
+    <!--Open Graph meta pour Facebook -->
+    <meta property="og:title" content="Bassiere Vincent Portfolio" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://kirito-san-88.github.io/portfolio/"
+    />
+    <meta
+      property="og:image"
+      content="https://kirito-san-88.github.io/portfolio/img/logo-test.png"
+    />
+    <meta
+      property="og:description"
+      content="Bassière Vincent, développeur web junior html5, css, JavaScript."
+    />
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary" />
+    <meta
+      name="twitter:site"
+      content="https://kirito-san-88.github.io/portfolio/"
+    />
+    <meta name="twitter:title" content="Bassière Vincent Portfolio" />
+    <meta name="twitter:creator" content="Bassiere Vincent" />
+    <meta
+      name="twitter:image"
+      content="https://kirito-san-88.github.io/portfolio/img/logo-test.png"
+    />
   </head>
   <body>
     <div class="loading-container" id="loading-container">
@@ -53,7 +81,7 @@
         <ul>
           <li><a href="#">test1</a></li>
           <li><a href="#">test2</a></li>
-          <li><a href="#">test3</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
         <div class="burger" id="burger"></div>
       </nav>
@@ -203,7 +231,37 @@
       </article>
     </section>
     <footer>
-      <div id="date"></div>
+      <!--
+      <section class="form">
+        <form
+          action="mailto:vincentbsr88@gmail.com"
+          method="post"
+          enctype="text/plain"
+          id="contact"
+        >
+          <fieldset>
+            <legend>Contact</legend>
+            <label for="FirstName">Votre nom</label>
+            <input type="text" placeholder="Votre nom" />
+            <label for="LastName">Votre prénom</label>
+            <input type="text" placeholder="Votre prénom" />
+            <label for="Email">Votre email</label>
+            <input type="text" placeholder="Votre email" />
+            <label for="Message">Votre message</label>
+            <textarea
+              name="Message"
+              id="message"
+              cols="30"
+              rows="10"
+              placeholder="Votre message"
+            ></textarea>
+            <input type="submit" name="submit" value="submit" />
+          </fieldset>
+        </form>
+      </section>
+    -->
+
+      <p>Copyright @ <span id="date"></span>. Tous droits réservés.</p>
     </footer>
     <script type="module" src="./js/loading.js"></script>
     <script type="module" src="./js/main.js"></script>
