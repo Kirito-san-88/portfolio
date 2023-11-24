@@ -39,7 +39,7 @@
   text-align: center;
   color: var(--color-white);
   font-size: var(--font-size);
-  letter-spacing: 5px;
+  letter-spacing: 3px;
 }
 .modal-text > h2 {
   margin: 0;
