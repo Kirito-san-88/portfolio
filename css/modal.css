@@ -41,6 +41,9 @@
   font-size: var(--font-size);
   letter-spacing: 5px;
 }
+.modal-text > h2 {
+  margin: 0;
+}
 
 .close-modal {
   width: 10vh;
