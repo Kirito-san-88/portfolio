@@ -7,7 +7,7 @@ export default function loading() {
   const headerModal = document.getElementById('header-modal');
 
   // Récupération de l'élément HTML avec l'ID 'header' et stockage dans la variable 'header'
-  const header = document.getElementById('header');
+  // const header = document.getElementById('header');
 
   // Écouter l'événement de chargement complet de la fenêtre (quand tout est chargé : images, styles, scripts, etc.)
   window.addEventListener('load', () => {
@@ -17,7 +17,7 @@ export default function loading() {
     // Après un délai de 300 millisecondes (0,3 seconde)
     setTimeout(() => {
       // Ajouter la classe CSS 'header' à l'élément 'header'
-      header.classList.add('header');
+      // header.classList.add('header');
 
       // Afficher le corps du document ('document.body') en définissant sa propriété de style 'display' sur 'block'
       document.body.style.display = 'block';

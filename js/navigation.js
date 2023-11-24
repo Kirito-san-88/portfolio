@@ -1,27 +1,30 @@
 // Fonction pour gérer la navigation burger
 export default function navigationBurger() {
-  // Récupération de l'élément HTML avec l'ID 'navbar' et stockage dans la variable 'navbar'
-  const navbar = document.getElementById('navbar');
+  const burger = document.querySelector('.burger');
+  const headerMenu = document.querySelector('.menu');
+  const headerMenuItems = document.querySelectorAll('.header .menu .items');
 
-  // Sélection de tous les éléments li situés dans une balise 'nav' et stockage dans la variable 'links'
-  const links = document.querySelectorAll('nav li');
-
-  // Écouter l'événement de clic sur l'élément avec l'ID 'burger' (peut-être un bouton de menu burger)
   burger.addEventListener('click', () => {
-    // Bascule la classe CSS 'active' sur l'élément 'navbar' pour afficher ou masquer le menu
-    navbar.classList.toggle('active');
-  });
+    headerMenu.classList.toggle('open');
+    burger.classList.toggle('open');
 
-  // Parcourir tous les éléments 'link' dans la liste 'links'
-  links.forEach((link) => {
-    // Écouter l'événement de clic sur chaque élément 'link'
-    link.addEventListener('click', () => {
-      // Supprimer la classe CSS 'active' de l'élément 'navbar' pour masquer le menu après avoir cliqué sur un lien
-      navbar.classList.remove('active');
+    headerMenuItems.forEach((item, index) => {
+      if (item.style.animationDelay) {
+        return (item.style.animationDelay = '');
+      }
+      const maxDelay = 0.8;
+      const delay = index / 12;
+      const animationDelay = delay >= maxDelay ? maxDelay : delay;
+      return (item.style.animationDelay = `${animationDelay}s`);
+    });
+    headerMenuItems.forEach((item) => {
+      item.addEventListener('click', () => {
+        headerMenu.classList.remove('open');
+        burger.classList.remove('open');
+      });
     });
   });
 }
-
 /*
  Ce code s'occupe de la gestion de la navigation burger.
  Il permet d'afficher ou de masquer un menu de navigation en ajoutant ou en supprimant une classe CSS appelée 'active' sur l'élément 'navbar' lorsque le bouton burger est cliqué.

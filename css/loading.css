@@ -4,6 +4,7 @@
   height: 100vh;
   background-color: rgb(30, 32, 32);
   position: fixed;
+  z-index: 10;
 }
 
 .loading {
@@ -14,7 +15,7 @@
   height: 120px;
   border-radius: 50%;
   animation: loader 1s linear infinite;
-  z-index: 700;
+  z-index: 3;
 }
 
 @keyframes loader {
