@@ -1,14 +1,14 @@
-import initializeModal from './header-modal.js';
-import loading from './loading.js';
+// import initializeModal from './header-modal.js';
+// import loading from './loading.js';
 import navigationBurger from './navigation.js';
 
 // Écouter l'événement de chargement complet du DOM (Document Object Model)
 document.addEventListener('DOMContentLoaded', () => {
   // Appeler la fonction 'loading()' pour gérer le chargement initial de la page
-  loading();
+  // loading();
 
   // Appeler la fonction 'initializeModal()' pour initialiser la fenêtre modale
-  initializeModal();
+  // initializeModal();
 
   // Appeler la fonction 'navigationBurger()' pour gérer la navigation burger (peut-être un menu mobile)
   navigationBurger();

@@ -1,7 +1,7 @@
 @import url(./normalize.css);
 @import url(./root.css);
-@import url(./loading.css);
-@import url(./modal.css);
+/* @import url(./loading.css); */
+/* @import url(./modal.css); */
 @import url(./navigation.css);
 
 body {
