@@ -267,6 +267,8 @@ background-size: 16px 16px;
   color: var(--light);
   font-size: var(--font-size-large);
 }
+
+
 .menu {
   list-style: none;
   text-decoration: none;
@@ -279,9 +281,7 @@ background-size: 16px 16px;
   text-decoration-style: dotted;
 }
 
-.burger {
-  cursor: pointer;
-}
+
 .burger .line {
   background: var(--light);
   width: 2em;
@@ -294,12 +294,12 @@ background-size: 16px 16px;
   padding: var(--font-size-xxlarge);
 }
 
-.container {
+/* .container {
   padding: 0 var(--header-menu-right-margin);
-}
+} */
 
 .burger {
-  position: fixed;
+  /* position: fixed; */
   right: var(--header-menu-right-margin);
   cursor: pointer;
   transition: transform var(--transition-time) ease-out;
