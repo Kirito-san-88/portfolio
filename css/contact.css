@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Carattere&display=swap');
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  width: 50vw;
+  margin: 0 auto;
+  background: #757171;
+  border-radius: 20px;
+}
+
+input,
+textarea {
+  border-radius: 12px;
+}
+input:nth-child(3),
+input:nth-child(5),
+input:nth-child(7) {
+  text-align: center;
+}
+
+legend {
+  text-align: center;
+  margin: 0 auto;
+  font-weight: bold;
+  font-size: 50px;
+  font-family: 'Carattere', cursive;
+  /* position: relative; */
+  /* top: 5px; */
+}
+label {
+  margin: 15px auto 5px auto;
+  font-weight: bold;
+}
+.btn {
+  width: 150px;
+  height: 5vh;
+  margin: 10px;
+}

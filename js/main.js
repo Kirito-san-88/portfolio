@@ -1,6 +1,7 @@
 // import initializeModal from './header-modal.js';
 // import loading from './loading.js';
 import navigationBurger from './navigation.js';
+import projectAnimation from './project.js';
 
 // Écouter l'événement de chargement complet du DOM (Document Object Model)
 document.addEventListener('DOMContentLoaded', () => {
@@ -12,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Appeler la fonction 'navigationBurger()' pour gérer la navigation burger (peut-être un menu mobile)
   navigationBurger();
-
+  projectAnimation();
   // Créer une instance de la date actuelle
   let date = new Date();
 

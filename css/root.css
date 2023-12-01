@@ -1,9 +1,23 @@
-:root {
-  
+:root {  
   --color-white: #fff;
   --font-size:font-size: calc(0.5rem + 0.8vw);
+  --primary: 169deg 53% 14%;
+  --dark: hsl(169deg 53% 3%);
+  --light: hsl(169deg 53% 97%);
+  --header-container-height: 10vh;
+  --header-menu-right-margin: 25px;
+  --font-size-normal: 1em;
+  --font-size-medium: 1.12em;
+  --font-size-large: 1.34em;
+  --font-size-xlarge: 1.7em;
+  --font-size-xxlarge: 2.1em;
+  --transition-time: 0.3s;
+  --test: #ffce00;
+  --test2: #fe4880;
 }
-
+::selection {
+  background-color: hsl(var(--primary) / 30%);
+}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -31,4 +45,9 @@ a:visited {
 }
 a:hover {
   color: var(--color-white);
+}
+.header{
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }

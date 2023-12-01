@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="icon" href="../img/logo-test.ico" />
+    <title>Contact</title>
+    <!--Open Graph meta pour Facebook -->
+    <meta property="og:title" content="Bassiere Vincent Portfolio" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://kirito-san-88.github.io/portfolio/"
+    />
+    <meta
+      property="og:image"
+      content="https://kirito-san-88.github.io/portfolio/img/logo-test.png"
+    />
+    <meta
+      property="og:description"
+      content="Bassière Vincent, développeur web junior html5, css, JavaScript."
+    />
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary" />
+    <meta
+      name="twitter:site"
+      content="https://kirito-san-88.github.io/portfolio/pages/contact.html"
+    />
+    <meta name="twitter:title" content="Bassière Vincent Portfolio" />
+    <meta name="twitter:creator" content="Bassiere Vincent" />
+    <meta
+      name="twitter:image"
+      content="https://kirito-san-88.github.io/portfolio/img/logo-test.png"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="container flex-wrapper">
+        <a href="../index.html" class="brand-name"> Bassière Vincent </a>
+        <ul class="menu" id="menu">
+          <li class="items">
+            <a href="../index.html" class="links">Accueil</a>
+          </li>
+          <li class="items">
+            <a href="./project.html" class="links">Mes projets</a>
+          </li>
+          <li class="items">
+            <a href="./contact.html" class="links">Contact</a>
+          </li>
+        </ul>
+        <div class="burger" id="burger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="form">
+        <!--<form
+              action="mailto:vincentbsr88@gmail.com"
+              method="post"
+              enctype="text/plain"
+              id="contact"
+            >-->
+        <fieldset>
+          <legend>Contact</legend>
+          <label for="firstName">Votre nom</label>
+          <input type="text" id="firstName" placeholder="Votre nom" />
+          <label for="lastName">Votre prénom</label>
+          <input type="text" id="lastName" placeholder="Votre prénom" />
+          <label for="email">Votre email</label>
+          <input type="text" id="email" placeholder="Votre email" />
+          <label for="message">Votre message</label>
+          <textarea
+            name="message"
+            id="message"
+            cols="30"
+            rows="10"
+            placeholder="Votre message"
+          ></textarea>
+          <button class="btn" type="submit" id="submit" value="Envoyer">
+            Envoyer
+          </button>
+        </fieldset>
+        <!--</form>-->
+      </section>
+    </main>
+
+    <footer id="contact">
+      <p>
+        @ Copyright <span id="date"></span> - BASSIERE Vincent || Tous droits
+        réservés.
+      </p>
+    </footer>
+    <script type="module" src="../js/main.js"></script>
+    <script type="text" src="../js/contact.js"></script>
+  </body>
+</html>
