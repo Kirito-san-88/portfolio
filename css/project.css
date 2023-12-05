@@ -39,13 +39,24 @@ body {
   align-items: end;
   justify-content: center;
 }
-.card_face_front_first {
-  background-image: url('../img/chalet.png');
+.card_face_front_first,
+.card_face_front_second,
+.card_face_front_third {
   object-fit: cover;
   background-position: top;
   background-size: 100%;
   background-repeat: no-repeat;
   background-color: rgb(64, 58, 72);
+}
+
+.card_face_front_first {
+  background-image: url('../img/chalet.png');
+}
+.card_face_front_second {
+  background-image: url('../img/memory-game.png');
+}
+.card_face_front_third {
+  background-image: url('../img/educmonchien.png');
 }
 
 .card_face_front h2 {
@@ -102,10 +113,31 @@ body {
 .card-svg {
   width: 60px;
 }
+.project-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 640px) and (max-width: 900px) {
+  .project-flex .card_inner {
+    height: 70vh;
+  }
 
-@media screen and (min-width: 640px) {
-  .project-flex {
-    display: flex;
-    flex-wrap: wrap;
+  .project-flex .card_inner h2 {
+    font-size: 16px;
+  }
+  .project-flex .card_inner img {
+    width: 50px;
+  }
+
+  .project-flex .card_header h2 {
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+  .project-flex .card_body h3 {
+    font-size: 13px;
+    margin-bottom: 5px;
+  }
+  .project-flex .card_body {
+    font-size: 13px;
   }
 }

@@ -5,6 +5,7 @@
 @import url(./navigation.css);
 @import url(./contact.css);
 @import url(./project.css);
+@import url(./cv.css);
 
 body {
   margin: auto;
