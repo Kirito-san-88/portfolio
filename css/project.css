@@ -42,6 +42,10 @@ body {
 .card_face_front_first {
   background-image: url('../img/chalet.png');
   object-fit: cover;
+  background-position: top;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-color: rgb(64, 58, 72);
 }
 
 .card_face_front h2 {
@@ -50,7 +54,7 @@ body {
 }
 
 .card_face_back {
-  background-color: hsl(172.6, 74.8%, 46.7%);
+  background-color: hsl(171.4, 5.5%, 49.8%);
   transform: rotateY(180deg);
 }
 .card_content {

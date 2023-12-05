@@ -12,8 +12,10 @@
   --font-size-xlarge: 1.7em;
   --font-size-xxlarge: 2.1em;
   --transition-time: 0.3s;
-  --test: #ffce00;
-  --test2: #fe4880;
+  /* --test: #ffce00;
+  --test2: #fe4880; */
+  --test: #93a9ec;
+  --test2: #423d2e;
 }
 ::selection {
   background-color: hsl(var(--primary) / 30%);
@@ -46,8 +48,55 @@ a:visited {
 a:hover {
   color: var(--color-white);
 }
+
 .header{
   position: sticky;
   top: 0;
   z-index: 1;
+}
+
+.music p{
+  font-size: 30px;
+  font-family: 'Carattere', cursive;
+}
+.music img
+{
+  position: relative;
+  content:url("../img/music.svg");
+  width: 20vw;
+  height: 20vh;
+}
+
+.music img.left {
+right: 150px;
+}
+.music img.right {
+  left: 150px;
+}
+
+.figure-img{
+  display: block;
+  position: relative;
+  width: 50%;
+  /* height: 50vh; */
+  /* border-radius: 50%; */
+  margin: 100px auto 0 auto;
+  /* top: 0;
+  bottom: 0; */
+  animation: upDown 3s linear infinite;
+}
+.img-profil{
+  width: 100%;
+  border-radius: 50%;
+  
+  
+}
+
+@keyframes upDown {
+  0%, 100%{
+transform:  translateY(-30px);
+  }
+  50%{
+    transform:  translateY(-70px);
+  }
 }
