@@ -68,6 +68,9 @@ a:hover {
   max-width: 1440px;
   margin: 0 auto;
 }
+.header {
+  padding: 20px 0;
+}
 
 .flex-wrapper {
   display: flex;
@@ -191,7 +194,10 @@ footer p {
   animation: mobileMenuFadeIn calc(var(--transition-time) * 2) forwards;
 }
 
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 770px) {
+  .header {
+    padding: 0;
+  }
   .burger {
     display: none;
   }
