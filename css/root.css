@@ -54,10 +54,17 @@ a:hover {
   top: 0;
   z-index: 1;
 }
-
+.about{
+  padding: 10px;
+}
 .music p{
   font-size: 30px;
   font-family: 'Carattere', cursive;
+  margin: 0;
+}
+.music>p:nth-child(5){
+  margin-bottom: 1em;
+
 }
 .music img
 {
@@ -68,10 +75,10 @@ a:hover {
 }
 
 .music img.left {
-right: 150px;
+right: 110px;
 }
 .music img.right {
-  left: 150px;
+  left: 110px;
 }
 
 .figure-img{
@@ -87,11 +94,47 @@ right: 150px;
 }
 .img-profil{
   width: 100%;
-  border-radius: 50%;
-
-  
+  border-radius: 50%;  
+}
+.profil>p{
+  font-family: 'Carattere', sans-serif;
+  font-size: 30px;
+  text-align: center;
 }
 
+.cv-link-svg-right{
+
+animation: arrowRight 3s linear infinite;
+position: relative;
+}
+.cv-link-svg-left{
+
+  animation: arrowLeft 3s linear infinite;
+  position: relative;
+}
+.cv-link{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.cv-link a{
+  text-align: center;
+  margin: 15px 0;  
+  animation: coloredLink 3s infinite;
+  font-weight: 900;
+}
+@keyframes coloredLink {
+  from, to { color: hsl(324, 70%, 45%); }
+  10%      { color: hsl(360, 65%, 45%); }
+  20%      { color: hsl( 36, 80%, 45%); }
+  30%      { color: hsl( 72, 75%, 35%); }
+  40%      { color: hsl(108, 65%, 35%); }
+  50%      { color: hsl(144, 75%, 35%); }
+  60%      { color: hsl(180, 75%, 35%); }
+  70%      { color: hsl(216, 60%, 45%); }
+  80%      { color: hsl(252, 65%, 50%); }
+  90%      { color: hsl(288, 60%, 40%); }
+}
 @keyframes upDown {
   0%, 100%{
 transform:  translateY(-30px);
@@ -110,3 +153,21 @@ transform:  translateY(-30px);
     height: 10vh;
   }
 }
+
+@keyframes arrowLeft {
+  0%, 100%{
+    transform:  translateX(15px);
+      }
+      50%{
+        transform:  translateX(30px);
+      }
+    }
+
+@keyframes arrowRight {
+  0%, 100%{
+    transform:  translateX(-15px);
+      }
+      50%{
+        transform:  translateX(-30px);
+      }
+    }

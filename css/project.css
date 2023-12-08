@@ -153,9 +153,17 @@ body {
     font-size: 13px;
   }
 }
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 790px) {
+  .card {
+    width: 350px;
+  }
+  .card,
   .card_face {
-    height: 350px;
+    height: 370px;
+  }
+  .project-flex {
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 
