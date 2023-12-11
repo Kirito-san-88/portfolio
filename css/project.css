@@ -41,7 +41,8 @@ body {
 }
 .card_face_front_first,
 .card_face_front_second,
-.card_face_front_third {
+.card_face_front_third,
+.card_face_front_fourth {
   object-fit: cover;
   background-position: top;
   background-size: 100%;
@@ -57,6 +58,9 @@ body {
 }
 .card_face_front_third {
   background-image: url('../img/educmonchien.png');
+}
+.card_face_front_fourth {
+  background-image: url('../img/projet-final-formation.png');
 }
 
 .card_face_front h2 {
